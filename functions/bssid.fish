@@ -1,0 +1,3 @@
+function bssid -d "watch current bssid"
+  watch '/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | grep BSSID'
+end
