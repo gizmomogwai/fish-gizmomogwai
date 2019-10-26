@@ -16,15 +16,18 @@ function hcp5 --description "HCP5 Project setup"
 
   functions -c fish_prompt _old_hcp5_fish_prompt
   function fish_prompt
-    set_color green
+    set -l bg 333
+    set -l standout 0f0
+    
+    set_color $standout --background $bg
     echo -n "HCP5 "
-    set_color $fish_color_normal
+    set_color $fish_color_normal --background $bg
     echo -n Target=
-    set_color green
+    set_color $standout --background $bg
     echo -n "$Target "
-    set_color $fish_color_normal
+    set_color $fish_color_normal --background $bg
     echo -n Debug=
-    set_color green
+    set_color $standout --background $bg
     echo $Debug
     _old_hcp5_fish_prompt
   end
