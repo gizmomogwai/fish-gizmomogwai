@@ -1,0 +1,5 @@
+* my simplistic rvm support
+Works together with bob the fish.
+Please remove the ~set -l ruby_version~
+in ~function __bobthefish_prompt_rubies~
+in ~fish_prompt.fish~
