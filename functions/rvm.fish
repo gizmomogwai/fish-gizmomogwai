@@ -14,6 +14,4 @@ function rvm --argument-names "ruby" --description "Ruby Version Manager"
   set -g -x GEM_PATH ~/.rvm/gems/$total ~/.rvm/gems/$ruby_version@global
   set -g -x RUBY_VERSION $total
   set -g -x ruby_version $total
-  set h (ruby --version)
-  echo "Activated $h"
 end
