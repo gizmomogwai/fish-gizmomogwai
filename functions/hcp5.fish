@@ -9,7 +9,7 @@ end
 function hcp5 --description "HCP5 Project setup"
 
   cd "/media/more/hcp5/ws"
-  rvm 2.6.0@hcp5
+  rvm ruby-2.6.0@hcp5
   
   set -gx Target audi_hcp5_bosch
   set -gx Debug true
